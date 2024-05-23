@@ -1,35 +1,19 @@
-<template lang="">
-  <div class="basis-full text-H2 my-10 text-center">
-    What they’ve said
-  </div>
+<template>
+  <div class="basis-full text-H2 my-10 text-center">What they’ve said</div>
   <div
-    class=" overflow-y-hidden scroll-w-0 touch-auto webkit-box text-center cursor-grab active:cursor-grabbing"
+    class="overflow-y-hidden scroll-w-0 touch-auto webkit-box text-center cursor-grab active:cursor-grabbing"
     ref="scrollContainer"
   >
-    <article
-      v-for="(item, index) in items"
-      :key="index"
-      class="xl:w-[30%] md:w-1/2 max-lg:w-4/5 bg-VeryLightGray md:p-20 md:pt-0  p-5 mx-10 my-16"
-    >
-      <div class="flex flex-row justify-center">
-        <div class="relative -top-10 max-lg:-top-14">
-          <img class="w-20 h-20" :src="item.img" alt="" />
-        </div>
-      </div>
-
-      <div class="text-2xl text-DarkBlue font-bold mb-10">
-        {{ item.name }}
-      </div>
-      <div class="text-sub">“{{ item.text }}”</div>
-    </article>
+    <Article />
   </div>
   <div class="text-center mt-20 mb-44">
-    <Button pointer="true">Get Started</Button>
+    <Button :pointer="true">Get Started</Button>
   </div>
 </template>
 <script>
 import { ref, onMounted } from "vue";
-import Button from "./Button.vue";
+import Button from "../Button.vue";
+import Article from "@/components/main/Article.vue";
 
 export default {
   name: "Person",
@@ -72,34 +56,9 @@ export default {
       scrollContainer,
     };
   },
-  data() {
-    return {
-      items: [
-        {
-          img: "/images/avatar-ali.png",
-          name: "Anisha Li",
-          text: "Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.",
-        },
-        {
-          img: "/images/avatar-anisha.png",
-          name: "Ali Bravo",
-          text: "We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.",
-        },
-        {
-          img: "/images/avatar-richard.png",
-          name: "Richard Watts",
-          text: "Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!",
-        },
-        {
-          img: "/images/avatar-shanai.png",
-          name: "Shanai Gough",
-          text: "Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without  being intrusive.",
-        },
-      ],
-    };
-  },
   components: {
     Button,
+    Article,
   },
   mounted() {
     const scrollContainer = this.$el.querySelector("#scrollContainer");
@@ -135,7 +94,4 @@ export default {
   },
 };
 </script>
-<style lang="">
-
-
-</style>
+<style lang=""></style>
