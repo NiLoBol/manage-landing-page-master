@@ -1,17 +1,16 @@
 module.exports = {
-  purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+  purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "img":"url('./src/images/bg-tablet-pattern.svg')",
+        img: "url('./src/images/bg-tablet-pattern.svg')",
 
-        "sd":"url('./src/images/bg-simplify-section-desktop.svg')",
-        "sm":"url('./src/images/bg-simplify-section-mobile.svg')"
+        sd: "url('./src/images/bg-simplify-section-desktop.svg')",
+        sm: "url('./src/images/bg-simplify-section-mobile.svg')",
       },
       fontWeight: {
         bold: "700",
@@ -26,16 +25,13 @@ module.exports = {
         VeryPaleRed: "hsl(13, 100%, 96%)",
         VeryLightGray: "hsl(0, 0%, 98%)",
       },
-      fontSize:{
-        sub:""
+      fontSize: {
+        sub: "",
       },
-      
-      
     },
-    
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
+};

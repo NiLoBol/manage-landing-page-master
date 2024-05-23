@@ -1,11 +1,10 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   font-family: "Be Vietnam Pro", sans-serif;
 }
 
@@ -13,26 +12,26 @@
   width: 5px;
 }
 @layer components {
-    .text-sub {
-      @apply text-2xl max-lg:text-xl font-semi text-DarkGrayishBlue
-    }
+  .text-sub {
+    @apply text-2xl max-lg:text-xl font-semi text-DarkGrayishBlue;
+  }
 
-    .text-H1 {
-      @apply text-7xl max-lg:text-5xl font-bold text-DarkBlue
-    }
+  .text-H1 {
+    @apply text-7xl max-lg:text-5xl font-bold text-DarkBlue;
+  }
 
-    .text-H2 {
-      @apply text-6xl max-lg:text-4xl  font-bold text-DarkBlue
-    }
-    .text-NAV {
-      @apply basis-auto xl:px-6 px-3 lg:text-xl md:text-sm font-semi text-DarkBlue cursor-pointer
-    }
+  .text-H2 {
+    @apply text-6xl max-lg:text-4xl  font-bold text-DarkBlue;
   }
-  
-  .webkit-box{
-    display: -webkit-box;
-    touch-action: pan-x;
+  .text-NAV {
+    @apply basis-auto xl:px-6 px-3 lg:text-xl md:text-sm font-semi text-DarkBlue cursor-pointer;
   }
-  .webkit-box:hover{
-    touch-action: cross-slide-x;
-  }
+}
+
+.webkit-box {
+  display: -webkit-box;
+  touch-action: pan-x;
+}
+.webkit-box:hover {
+  touch-action: cross-slide-x;
+}
