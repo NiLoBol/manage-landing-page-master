@@ -1,5 +1,5 @@
 <template lang="">
-  <div className="container  mx-auto ">
+  <div className="container  mx-auto pt-16 py-16  ">
     <div className=" flex flex-row  items-center py-10 h-20 ">
       <div className="xl:basis-1/4 md:w-[180px] md:ps-5 max-md:basis-3/4  max-sm:mx-5 ">
         <svg xmlns="http://www.w3.org/2000/svg" width="146" height="24">

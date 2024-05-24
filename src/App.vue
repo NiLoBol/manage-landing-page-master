@@ -1,14 +1,14 @@
 <template lang="">
-  <div class="bg-img bg-no-repeat 2xl:bg-[70rem_-10rem] xl:bg-[50rem_-10rem]">
+  <div class="bg-img  bg-no-repeat 2xl:bg-[70rem_-10rem] xl:bg-[50rem_-10rem]">
     <Navbar></Navbar>
     <div
-      class="flex flex-wrap md:flex-row max-lg:flex-col-reverse container mx-auto max-lg:p-10 max-lg:p-0"
+      class="flex flex-wrap md:flex-row max-lg:flex-col-reverse container mx-auto md:p-10 max-sm::p-0"
     >
       <div class="basis-1/2 max-lg:basis-full">
         <div class="text-H1 mt-20">
           Bring everyone together to build better products.
         </div>
-        <div class="text-sub xl:w-[400px] my-10">
+        <div class="text-sub xl:w-[400px]  my-10">
           Manage makes it simple for software teams to plan day-to-day tasks
           while keeping the larger team goals in view.
         </div>
@@ -17,10 +17,10 @@
         </div>
       </div>
 
-      <div class="basis-1/2 max-lg:basis-full">
+      <div class="basis-1/2 max-lg:basis-full my-auto">
         <img
           src="/images/illustration-intro.svg"
-          class="xl:w-[800px] xl:h-[800px] max-w-[80w] max-lg:mt-20"
+          class="xl:w-[800px]  max-w-[80w] max-lg:mt-20"
           alt=""
         />
       </div>
@@ -56,7 +56,7 @@
       <Person></Person>
     </div>
     <div
-      class="lg:bg-sd bg-sm bg-BrightRed bg-no-repeat xl:h-52 lg:h-64 h-84 py-20 bg-[13rem_-6rem]"
+      class="lg:bg-sd bg-sm bg-BrightRed bg-no-repeat xl:h-52 lg:h-64 h-84 py-20 xl:bg-[13rem_-6rem] max-sm:bg-[0rem_2rem]"
     >
       <div
         class="flex flex-wrap flex-row container mx-auto items-center max-lg:text-center"
@@ -81,7 +81,7 @@
           <div
             class="flex flex-row flex-wrap justify-center items-start max-md:flex-col-reverse gap-5 mt-5"
           >
-            <div class="basis-full mb-14 mx-auto max-md:mt-12">
+            <div class="basis-full mb-6 mx-auto max-md:mt-10">
               <img class="h-10 mx-auto" src="/images/logo2.svg" alt="" />
             </div>
             <div class="basis-auto max-lg:hidden">
@@ -100,7 +100,7 @@
               <img class="w-8 h-8" src="/images/icon-instagram.svg" alt="" />
             </div>
             <div
-              class="basis-full w-full flex flex-row flex-wrap max-lg:justify-between max-md:p-20 md:px-10 lg:p-0 lg:hidden"
+              class="basis-full w-full flex flex-row flex-wrap max-lg:justify-between max-md:p-0 md:px-10 lg:p-0 lg:hidden"
             >
               <div class="basis-auto">
                 <img class="w-8 h-8" src="/images/icon-facebook.svg" alt="" />
