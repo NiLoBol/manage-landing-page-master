@@ -46,7 +46,7 @@ export default {
   data() {
     return {
       menubar: false,
-      menu: "../../../public/images/icon-hamburger.svg",
+      menu: "/images/icon-hamburger.svg",
     };
   },
   components: {
@@ -56,9 +56,9 @@ export default {
   methods: {
     switchmanubar() {
       if (this.menubar) {
-        this.menu = "../../../public/images/icon-hamburger.svg"
+        this.menu = "/public/images/icon-hamburger.svg"
       } else {
-        this.menu= "../../../public/images/icon-close.svg"
+        this.menu= "/public/images/icon-close.svg"
       }
       this.menubar = !this.menubar;
       console.log(this.menubar);
