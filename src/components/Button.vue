@@ -2,8 +2,8 @@
   <a
     v-if="!condition"
     :class="[
-      'lg:text-lg text-sm font-semi bg-BrightRed text-white p-3 rounded-full px-6',
-      { 'hover:cursor-pointer': pointer }
+      'lg:text-lg text-sm font-semi bg-BrightRed text-white p-3 rounded-full  px-6',
+      { 'hover:cursor-pointer': pointer },{'shadow-BrightRed/60 shadow-lg':shadow}
     ]"
   >
     <slot></slot>
@@ -18,7 +18,7 @@
 <script>
 export default {
   name: "Button",
-  props: { condition: Boolean, pointer: Boolean },
+  props: { condition: Boolean, pointer: Boolean , shadow:Boolean},
 };
 </script>
 <style lang=""></style>

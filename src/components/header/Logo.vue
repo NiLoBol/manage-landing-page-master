@@ -1,7 +1,5 @@
 <template lang="">
-  <div className="container  mx-auto pt-16 py-16  ">
-    <div className=" flex flex-row  items-center py-10 h-20 ">
-      <div className="xl:basis-1/4 md:w-[180px] md:ps-5 max-md:basis-3/4  max-sm:mx-5 ">
+    <div className="xl:basis-1/4 md:w-[180px] md:ps-5 max-md:basis-3/4  max-sm:mx-5 ">
         <svg xmlns="http://www.w3.org/2000/svg" width="146" height="24">
           <g fill="none" fill-rule="evenodd">
             <path
@@ -24,32 +22,13 @@
           </g>
         </svg>
       </div>
-      <div className="xl:basis-2/4 md:w-auto flex flex-row max-md:hidden ">
-        <div className="text-NAV">Pricing</div>
-        <div className="text-NAV">Product</div>
-        <div className="text-NAV">About Us</div>
-        <div className="text-NAV">Careers</div>
-        <div className="text-NAV">Community</div>
-      </div>
-      <div className="xl:basis-1/4 lg:basis-1/5 max-md:hidden text-end">
-        <Button pointer="true">Get Started</Button>
-      </div>
-      <div className="max-lg:basis-1/4 md:hidden">
-        <Image src="{manu}" alt="" width="{50}" height="{50}"></Image>
-      </div>
-    </div>
-  </div>
 </template>
 <script>
-import Button from "./Button.vue";
 export default {
-  name: "Navbar",
-  data() {
-    return {};
-  },
-  components: {
-    Button,
-  },
-};
+    name:"Logo"
+    
+}
 </script>
-<style lang=""></style>
+<style lang="">
+    
+</style>
