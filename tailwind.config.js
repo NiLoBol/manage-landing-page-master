@@ -8,10 +8,10 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "img":"url('./public/images/bg-tablet-pattern.svg')",
+        "img":"url('/images/bg-tablet-pattern.svg')",
 
-        "sd":"url('./public/images/bg-simplify-section-desktop.svg')",
-        "sm":"url('./public/images/bg-simplify-section-mobile.svg')"
+        "sd":"url('/images/bg-simplify-section-desktop.svg')",
+        "sm":"url('/images/bg-simplify-section-mobile.svg')"
       },
       fontWeight: {
         bold: "700",
